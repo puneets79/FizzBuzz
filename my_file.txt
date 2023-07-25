@@ -998,5 +998,6 @@ calc x 51 65
 calc + 95 16
 calc - 14 25
 calc x 44 52
+calc div 6 4
 calc ^ 4 2
 calc % 5 3
