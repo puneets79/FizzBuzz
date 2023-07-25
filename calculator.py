@@ -12,6 +12,8 @@ def calc (operator, number_1, number_2):
         answer = int(number_1) ** int(number_2)
     elif operator == "div":
         answer = int(number_1) // int(number_2)
+    elif operator == "%":
+        answer = int(number_1) % int(number_2)
     return answer
 
 with open("my_file.txt",'r') as f:
