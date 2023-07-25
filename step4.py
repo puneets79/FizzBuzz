@@ -28,11 +28,12 @@ while i < len(text_string):
             i = int(mystring[1]);
         i -= 1
     elif mystring[0] == 'remove':
+        if int(mystring[1]) > i:
+            i+=1
         removed = text_string.pop(int(mystring[1])-1)
         print (removed)
-        i += 1
     elif mystring [0] == 'replace':
-        text_string[int(mystring[1]) -1 ] = text_string[int(mystring[1]) - 1]
+        text_string[int(mystring[1]) -1 ] = text_string[int(mystring[2]) - 1]
         i+=1
 
 print ('final instruction is  ' + text_string[i] + ' on line number ' + str(i+1))
